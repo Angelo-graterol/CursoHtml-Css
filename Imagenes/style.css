@@ -1,0 +1,9 @@
+p{
+    text-decoration: ;
+}
+
+@font-face {
+    font-family:"Monserrat" ;
+    src: url(/tipografias/regular.ttf) format("truetype");
+    font-weight: 400;
+}

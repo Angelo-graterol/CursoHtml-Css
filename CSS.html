@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Css</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="HTML.html">HTML</a></li>
+                <li><a href="CSS.html">CSS</a></li>
+                <li><a href="#">Proyecto 1</a></li>
+            </ul>
+        </nav>       
+    </header>
+
+    <h3>CSS Básico</h3>
+    <ol>
+        <li>
+            <h4>Enlazar Css con Html</h4>
+            <p>para enlazarlo hay que agregar una etiqueta "link" en el head del html</p>
+            <p>Ejemplo: "< link rel="stylesheet" href="ruta de archivo css" >"</p>
+
+        </li>
+
+        <li>
+            <h4>Selectores (Básico)</h4>
+            <ul>
+                <li>
+                    <h5>Selector Etiqueta</h5>
+                    <p>Se utiliza el nombre de la etiqueta, haciendo que todas las modificaciones que se hagan se van a aplicar en todos los elementos que coincidan con esa etiqueta <br><br> Ejemplo: p{<br>
+                        propiedad:valor;<br>
+                    }
+                    </p>
+                </li>
+
+                <li>
+                    <h5>Selector mediante Clases</h5>
+                    <p>Una clase es un atributo que se utiliza para asignar un nombre a un grupo de elementos, permitiendo aplicarles estilos específicos o identificarlos fácilmente.</p>
+
+                    <p>Ejemplo: < p class="definiciones-parrafos" >contendio< /p > <br><br>En css: <br> .definiciones-parrafos{<br>propiedad:valor;<br>}</p>
+                </li>
+
+                <li>
+                    <h5>Selector mediante ID</h5>
+                    <p>Es un identificador único, es decir, solo lo puede llevar un elemento</p>
+                    <p>Ejemplo: <br><br> En Html: < p id="parrafoEspecial" >contenido< /p > <br><br> En Css: <br><br> #parrafoEspecial{<br>propiedad:valor;<br> } </p>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <h4>Propiedades de Texto y Fuente</h4>
+            <ul>
+                <li>
+                    <h4>color</h4>
+
+                    <p>modifica el color del texto, hay varias formas de indicar el color con varios sistemas</p>
+                    <p>Ejemplo: <br><br>p{<br>color:red;<br>}</p>
+                </li>
+                <li>
+                    <h4>font-family</h4>
+                    <p>Indica la fuente de texto o tipografía de texto</p>
+                    <p>se puede escribir el nombre de la tipografía tal cual, pero cuando la tipografia tiene mas de una palabra se debe usar comillas simples ''; tambien se pueden agregar mas de una, separandolas por comas; eso por si la primera no funciona</p>
+                    <p>Ejemplo: <br><br> h1{<br>font-family: sans-serif, 'arial';<br> } </p>
+                </li>
+                <li>
+                    <h4>font-size</h4>
+                    <p>Modifica el tamaño de la letra, se suele dar la medida en pixeles, pero tambien hay otras alternativas</p>
+                    <p>Ejemplo: <br><br> p{<br>font-size:15px;<br></p>
+                </li>
+                <li>
+                    <h4>font-weight</h4>
+                    <p>Sirve para modificar el grosor del texto; conocido para darle el aspecto negrita a la letra</p>
+                    <p>Ejemplo: <br><br> p{<br>font-weight:15px;<br></p>
+                    <p>La tipografias suelen tener definidas sierto niveles de grosor en la tipografia; es decir en vez de colocar en pixeles cierto numero, lo definencon la tipigrafía en sí, los niveles parten de 100 hasta 900 subiendeo de cien en cien; tambien se puede definir manualmente.</p>
+                    <p>Mas particularidades: si se usa "bold", el valor es como de 700; si se usa bolder, hace que vaya un escalon mas allá del normal de bold</p>
+                </li>
+                <li>
+                    <h4>font-style</h4>
+                    <p>Define el estilo de la letra; hay varias opciones:</p>
+                    <ul>
+                        <li>normal: es el valor por defecto, de la tipografia</li>
+                        <li>Italic: es un poco inclinada</li>
+                        <li>oblique: Tambien inclina la letra pero un poco menos de italic, en algunos casos es lo mismo</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>text-align</h4>
+                    <p>Define el alineado de la letra; puede ser hacia la derecha, izquierda, centrado, justificado; en la practica serían:</p>
+                    <ul>
+                        <li>rigth</li>
+                        <li>left</li>
+                        <li>center</li>
+                        <li>justify</li>
+                        <li>start</li>
+                        <li>end</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>text-decoration</h4>
+                    <p>es una propiedad con la se puede aplicar elementos decorativos o complementarios al texto; como un subrayado, el efecto de tachado etc; los principales son:</p>
+                    <ul>
+                        <li>underline</li>
+                        <li>overline</li>
+                        <li>line-through</li>
+                    </ul>
+                    <p>Se pueden combinar entre sí, tambien hey otros valores pero esos son los más usados <br><br> Otra particularidad es que el valor por defecto se llama "none" y significa que no hay ninguna decoración aplicada</p>
+                </li>
+        
+                <li>
+                    <h4>        
+                        line-height
+                    </h4>
+                    <p>Definie el interlineado, es decir, el espacio que hay entre linea y linea; se usan valores decimales; donde 1 es como la base y se puede ir a 1.1; 1.5 etc; tambien se pueden usar porcentajes pero es relativo</p>
+                </li>
+                <li>
+                    <h4>letter-spacing</h4>
+                    <p>define el espacion que hay entre letra y letra; se puede definir con pixeles</p>
+                    <p>Ejemplo: <br><br> p{<br>leeter-spacing:5px;<br>}</p>
+                </li>
+        
+                <li>
+                    <h4>text-transform</h4>
+                    <p>Es una propiedad que permite cambiar el texto de formas como pasar todo a minúsculas o mayúsculas; hacer que la primera letra de cada palabra sea mayuscula etc; los principales valores son:</p>
+                    <ul>
+                        <li>none (default)</li>
+                        <li>uppercase</li>
+                        <li>lowercase</li>
+                        <li>capitalize</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h4>Tipografías Externa</h4>
+            <h5>Hay dos formas de traer Tipografías externas:</h5>
+            <ul>
+                <li>
+                    <h5>
+                        Agregando tipografía en el Head
+                    </h5>
+                    <p>Se busca la tipografia en Google Fonts y luego en una etiqueta "link" se enlaza la dirección de la tipografía</p>
+                    <p>Para usarla se modifica la propiedad font-family, ademas de las propiedades de font-weight para el grososr de la letra y la de font-style para aplicar algún estilo</p>
+                </li>
+                <li>
+                    <h5>
+                        Descargando La tipografía y configurandola
+                    </h5>
+                    <p>Se descarga la tipografía en Google Fonts y se siguen los siguientes pasos:</p>
+                    <ol>
+                        <li>Se descarga la tipografia del Google Fonts</li>
+                        <li>Se extrae el archivo, para encontrar la carpeta "static"</li>
+                        <li>Crear un nuevo archivo CSS, el nombre puede ser "fonts"</li>
+                        <li>Se vincula en el Head del Html</li>
+                        <li>Se llama la estructura "@font-face" que sirve para configurar la tipografia; el nombre; se agrega la dirección del archivo en la carpeta static; y tambien se define el font-weight</li>
+                        <li>Ya por último se puede usar la tipografia con el nombre que se le asigno y con el font-weight usar las diferentes variantes entre ellas, con tal y se hallan configurado</li>
+                    </ol>
+                    <p>Ejemplo de la configuración: <br><br> @font-face {<br>
+                        font-family:"Monserrat" ;<br>
+                        src: url(/tipografias/regular.ttf) format("truetype");<br>
+                        font-weight: 400;<br>}</p>
+                    <p>Para configurar mas, se repite la misma estructura; ya que dentro de la carpeta static suele haber variantes de la misma tipografía</p>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <h4>Box Model</h4>
+            <p>Concepto que explica o actua en la relación de cada elemento html, cada elemento se representa como un bloque, y hay varias propiedades</p>
+            <ul>
+                <li>
+                    <h5>content</h5>
+                    <p>Es el contenido de la etiqueta, como el texto o una imagen etc</p>
+                </li>
+                <li><h5>padding</h5>
+                    <p>Es como un relleno, relleno entre el contenido y el borde del elemento</p>
+                    
+                </li>
+                <li><h5>border</h5>
+                    <p>Es el borde del elemento,al cual se le puede modificar el grosor, el estilo, el tamaño, color y forma; rodea tanto el contenido y el padding</p>
+                    
+                </li>
+                <li><h5>margin</h5>
+                    <p>El margen representa el espacio entre el elemento con otros elementos, no hace parte del elemento, solo es un espacio que lo separa de otros elementos</p>
+                
+                </li>
+            </ul>
+            <p>Vamos a conocer las propiedades con mas detalle</p>
+            <ul>
+                <li>
+                    <h4>width & height</h4>
+                    <p>Es el ancho y alto del elemento, si no lo tiene definico o el contenido no lo define, es como si no existiera el elemento; se puede modificar con las propiedades width y con height; modificando el tamaño mediante pixeles, porcentajes u otras medidas relativas u absolutas</p>
+                </li>
+                <li>
+                    <h4>Padding y Margin</h4>
+                    <p>Padding: espacio entre el contenido y el borde de la página, es desde el borde interno hasta el contenido; el tamaño del contenido no cambia con esta propiedad; esta propiedad engloba las cuatro direcciones (arriba, derecha, abajo, inzquierda), por separado serian padding-top, padding-right, padding-bottom, padding-left. <br><br> Tambien podemos modifcar cada una desde "padding" ejemplo: <br><br> padding: 10px (top) 5px (right) 3px (bootom) 2px (left) <br> <br> Tambien se puede modificar top y bootom al mismo tiempo y rigth y left tambien <br> <br> Ejemplo: <br> <br> padding: 10px (top & bootom) 5px (right & left)</p>
+                    <p>Margin: sirve o define el espacio entre un elemento con los elementos que lo rodean; tambien funciona como el conjunto de todas las direcciones; margin-top, margin-right, margin-bootom, margin-left; con margin se puede modificar todos agregando los cuatro valores (así sea 0); o los verticales y horizontales agregando dos valores </p>
+                    <p>Un característica importante del margin es la superposicón de los margenes de un elemento con otro, en el eje vertical, es decir, en el margin top y bootom dependiendo de la posicion de cada elemento; si el elemento de arriba tiene un margin-bottom de 10px y el elemento de abajo tiene un margin-top de 10px; el margen o espacio entre los dos elementos no es de 20px; no se suman los margenes, se superponen, en este caso sería de 10px; si uno de los es mayor que el otro, el margen que se aplica es el mayor.</p>
+
+                    <p>Una forma de centrar elementos con margin: la forma es darle el valor "auto", funciona para centrar horizontalmente un elemento en el espacio que lo contiene</p>
+                </li>
+
+                <li>
+                    <h4>border</h4>
+                    <p>Esta propiedad engloba varias propiedades; estas en conjunto definen el borde como tal; son:</p>
+                    <ul>
+                        <li>border-width: se aplica con unidades de medida como pixeles</li>
+                        <li>border-style: los valores pueden ser solid, </li>
+                        <li>border-color: se puede aplicar el color en cualqier formato que lo permita</li>
+                    </ul>
+                    <p>border puede modificar las tres propiedades, se dan los valores en el orden (tamaño estilo color) <br><br> Ejemplo: border: 3px green solid</p>
+                    <p>Tambien funciona para modifcar un solo lado del elemento; se debe usar "border", luego el lado (top,right, botoom, left); y luego se aplican los tres valores <br><br> Ejemplo: border-top: 5px solid blue</p>
+                    
+                    <p>además hay otra propiedad que sirve para redondear los bordes: border-radius</p>
+                    <p>border-radius: redondea las esquinas dependiendo del valor asignado, se puede dar en unidades absolutas como pixeles o relativas como porcentajes; hay diferencias entre usar una u otra</p>
+
+                    3.48.08
+                </li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Html</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="HTML.html">HTML</a></li>
+                <li><a href="CSS.html">CSS</a></li>
+                <li><a href="#">Proyecto 1</a></li>
+            </ul>
+        </nav>       
+    </header>
+
+    <div>
+        <h3> HTML Básico</h3>
+    <div>
+        <ol>
+            <li>
+                <h4>Estructura de una Etiqueta</h4>
+                <p>hay dos tipos de etiquetas en html, las que se tienen que cerrar y las que no; ejemplos</p>
+                <ul>
+                    <li>Se cierran</li>
+                    <p>como con los encabezados: "< h1 >Titulo < / h1>"</p>
+
+                    <li>No se cierran</li>
+                    <p>como las imagenes: "< img src="" ></p>
+                </ul>
+            </li>
+            
+            <li>
+                <h4>Párrafos y Encabezados</h4>
+                    <p>para escribir un párrafo se usa la etiqueta "p". <br><br>para los encabezados hay 6 posiblidades, h1, h2, h3, h4, h5 ,h6; la diferencia esta en la importancia del titulo, siendo h1 el título principal y que se recomienda usar uno solo en toda la página; y desde el h2 en adelante se usan como subtitulos, pero siguiendo un orden <br><br> Ejemplos: <br><br> < p >párrafo< /p > <br><br> < h1 >Título< /h1 ></p>
+            </li>
+
+            <li>
+                <h4>Listas</h4>
+                <p>Hay dos tipos de listas: Ordenadas y Desordenadas <br><br> Para usar una lista ordenada se usa la etiqueta "ol" y para usar una lista desordenada se usa "ul"; adentro de estas etiquetas su usan los "li" para separar un item de otro <br> <br> Ejemplos: <br> <br> < ol ><br>_< li >< /li ><br>_< li >< /li ><br>_< li >< /li ><br>< /ol > <br><br> < ul ><br>_< li >< /li ><br>_< li >< /li ><br>_< li >< /li ><br>< /ul ></p>
+            </li>
+
+            <li>
+                <h4>Enlaces</h4>
+                <p>Para usar un enlace en html se necesita de la etiqueta "a", ademas es muy importante un atributo para enlazar la dirección, el atributo es "href", va dentro de la etiqueta</p>
+
+                <p>Ejemplo: <br><br> < a href="dirección" >ENLACE 1< /a ></p>
+
+                <p>los enlaces por naturaleza se abren o cargan en la misma página, es decir, al hacer click en el la dirección o página se carga en la misma pestaña <br> <br>¿Cómo cambiar para que se carguen en otra pestaña? <br> <br> Para esto, hay que modificar el atributo "target", que por defecto su valor es "_self", hay que cambiarlo a "_blank"</p>
+
+                <p>Ejemplo: <br><br> < a href="enlace" target="_blank" >ENLACE 2< /a ></p>
+            </li>
+
+
+            <li>
+                <h4>Imagenes</h4>
+                <p>la etiqueta para la imagenes es "img", y es una etiqueta que no se cierra; para que funcione se necesita el atributo "src" que sirve para alojar la dirección de la imagen para que así se pueda mostrar; ademas es recomendable usar el atributo "alt" que sirve para dejar un mensaje en caso de que la imagen no se logre mostrar, un mensaje como de que trata la supuesta imagen</p>
+
+                <p>Ejemplo: <br><br> < img src="direccion de la imagen" alt="imagen de ejemplo"></p>
+            </li>
+
+            <li>
+                <h4>Rutas</h4>
+                <p>Hay dos tipos de Rutas: Rutas Absolutas y Rutas Relativas</p>
+
+                <h5>Rutas Absolutas</h5>
+                <p>Para entenderlas mejor, son rutas que sea donde sea van a llegar al mismo lugar; esto como los enlaces en la web</p>
+                <p>Ejemplo: <br><br> "https://youtube.com"</p>
+
+                <h5>Rutas Relativas</h5>
+                <p>Este tipo de ruta dependen de la ubicación del archivos al que estamos llamando. <br><br> Si se encuentra en la misma carpeta, basta con colocar el nombre del archivo <br> <br> Ejemplo: "imagen.jpg" <br> <br> Si se encuentra una carpetamas allá, o en una carpeta que se encuentra en la misma carpeta del archivo donde estamos se debe usar el nombre de la carpeta donde está el archivo que buscamos y luego si el nombre del archivo <br> <br> Ejemplo: Imagenes/foto.png <br> asi con las carpetas que sean necesarias. <br><br> Si el acrchivo que buscamos está afuera de la carpeta donde estamos se debe usar "../" para salir una carpeta, si fuesen dos habría que repetir lo mismo <br> <br> Ejemplo: ../imagen.png <br><br> si fuersen dos carpetas afuera: ../../archivo.jpg <br><br> Tambien podemos entrar a otra carpeta despues de salir una <br> <br> Ejemplo: ../imagenes/portada.png <br> en ese ejemplo sale una carpeta y luego ingresa a otra carpeta donde está el archivo que se necesita</p>
+            </li>
+
+            <li>
+                <h4>Formularios</h4>
+                <p>Para trabajar con formularios es necesario utilizar la etiqueta "form", dentro de esta se trabaja cada elemento que hace parte del formulario</p>
+                <p>La etiqueta que se trabaja dentro de "form" principalmente es "input"</p>
+
+                <h5>Input</h5>
+                <p>El imput representa un elemento que participa en el formulario, como un espacio para escribir texto, como el nombre, como un email; un imput puede ser tambien tipo numérico, de color; puede ser de tipo archivo, que permite subir algun archivo, tambien esta el input submit que es el boton que envía el formulario</p>
+
+                <h6>Atributos en un input</h6>
+                <ol>
+                    <li>type: es donde se define el tipo de input, como de texto, email, numerico etc</li>
+                    <li>placeholder: es un atributo que permite agregar un texto en el input como de ejemplo</li>
+                    <li>Required: es un atributo que hacer que el input sea obligatorio de llenar para poder enviarse</li>
+                    <li>Name: sirve como un identificador, es util para funcionalidades en la parte del backend</li>
+                    <li>Value: es el contenido que se envia en cada input, ejemplo, el nombre escrito por el usuario etc</li>
+                    <li>min y max: en algunos inputs se puede aplicar para definir el mínimo o máximo de caracteres que deben ser rellenados, por ejemplo el nombre mínimo 3 caracteres</li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    </div>
+
+</body>
+</html>
